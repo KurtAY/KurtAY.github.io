@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Iteration 4</title>
+		<style>
+		h4 {
+			font-family: calibri;
+		}
+		</style>
+	</head>
+	
+	<body>
+	<h4>Iteration 4</h4>
+		<script>
+			var i = 200;
+		
+			myFunction(i);
+			function myFunction(i) {
+				/*for (i = 100; i > 0; i--) {
+					if(i % 3 === 0) {
+						i = i/3; 
+						document.write(' ',i,' ');
+					}
+					
+					else{
+						i = i-1;
+						i = i/3;
+						document.write(' ',i,' ');
+					}
+				}*/
+				
+				do{
+					if(i % 3 === 0) {
+						i = i/3; 
+						document.write(' ',i,' ');
+					}
+					
+					else if(i % 3 == 1) {
+						i = i-1;
+						i = i/3;
+						document.write(' ',i,' ');
+					}
+					
+					else if(i % 3 == 2) {
+						i = i+1;
+						i = i/3;
+						document.write(' ',i,' ');
+					}
+				
+				}while(i > 0 );
+				
+			}
+	    </script>
+	</body>
+</html>
