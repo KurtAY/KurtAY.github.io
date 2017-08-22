@@ -1,0 +1,50 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Strings 4</title>
+	<style>
+	h4 {
+		font-family: calibri;
+	}
+	</style>
+</head>
+
+<body>
+	<h4>Strings 4</h4>
+	
+	<script>
+		var string = "HELLLOOO";
+		var amount = 0;
+		
+		myFunction(string);
+		function myFunction(string) {
+			/*if (string.charAt(0) === string.charAt(1) && string.charAt(1) === string.charAt(2)){
+				amount = amount + 1;
+				document.write(amount);
+			}
+			
+			else if (string.charAt(1) === string.charAt(2) && string.charAt(2) === string.charAt(3)){
+				amount = amount + 1;
+				document.write(amount);
+			}
+			
+			else if (string.charAt(2) === string.charAt(3) && string.charAt(3) === string.charAt(4)){
+				amount = amount + 1;
+				document.write(amount);
+			}
+			
+			else if (string.charAt(3) === string.charAt(4) && string.charAt(4) === string.charAt(5)){
+				amount = amount + 1;
+				document.write(amount);
+			}*/
+			
+			for (var i = 0; i < string.length; i++) {
+				if (string.substr(i,1) === string.substr(i+1,1) && string.substr(i+1,1) === string.substr(i+2,1)) {
+					amount++;
+					document.write(amount);
+				}				
+			}
+		}
+	</script>
+</body>
+</html>
