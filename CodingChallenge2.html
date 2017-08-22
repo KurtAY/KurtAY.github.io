@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coding Challenge 2</title>
+</head>
+<body>
+	<script>
+	var x = 5;
+	var a = 10;
+	var b = 14;
+	var c = 18;
+	
+	function squared(x) {
+		return x*x;
+	}
+	document.write(squared(x));
+	</script>
+
+	<hr />
+	
+	<script>
+	
+	function sumOfThree(a,b,c) {
+		return a+b+c;
+	}
+	document.write(sumOfThree(a,b,c));
+	</script>
+
+	<hr />
+	
+	<script>
+	var person = {
+		name: 'Fred Jackson',
+		age: 20,
+		job: 'Car Cleaner'
+	};
+	document.write(person.name,', ', person.age, ', ', person.job);
+	
+	
+	person.name = 'Fred Jimbob';
+	person.age = 9;
+	person.job = 'Singer';
+	
+	document.write('. ', person.name,', ', person.age, ', ', person.job);
+	</script>
+	
+	<hr />
+
+<button onclick="increaseAge()">Click travel in time!</button>
+	<script>
+		function increaseAge() {
+			person.age = person.age + 1;
+			document.write(person.name, ' is now ', person.age, ' years old.');
+		}
+	</script>
+	
+</body>
+
+
+</html>

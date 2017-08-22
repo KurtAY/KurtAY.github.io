@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Conditionals 1</title>
+		<style>
+		h4 {
+				font-family: calibri;
+			}
+		</style>
+	</head>
+	
+	<body>
+	<h4>Conditionals 1</h4>
+		<script>
+		var person = {
+			name: 'Jimmy Jackson',
+			age: 41
+		}
+		
+		//var name=person.name;
+		//var age = person.age;
+		
+		//var trueMessage = 'You are  the correct age to proceed.'
+		//var falseMessage = 'You are NOT within the suitable age boundaries.'
+		myFunction(person);
+		function myFunction(person) {
+		
+			if (person.age < 20 || person.age > 40) {
+				document.write(person.name, ', you NOT within the suitable age. You are ', person.age, '. This is only for 20-40 year olds.' );
+			}
+			
+			else {
+				document.write(person.name, ', you are ', person.age, ' years old. You may proceed.');
+			}
+			
+		}
+		</script>
+	</body>
+</html>
