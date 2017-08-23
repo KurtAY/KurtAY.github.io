@@ -13,38 +13,26 @@
 	<h4>Strings 4</h4>
 	
 	<script>
-		var string = "HELLLOOO";
-		var amount = 0;
 		
-		myFunction(string);
-		function myFunction(string) {
-			/*if (string.charAt(0) === string.charAt(1) && string.charAt(1) === string.charAt(2)){
-				amount = amount + 1;
-				document.write(amount);
-			}
-			
-			else if (string.charAt(1) === string.charAt(2) && string.charAt(2) === string.charAt(3)){
-				amount = amount + 1;
-				document.write(amount);
-			}
-			
-			else if (string.charAt(2) === string.charAt(3) && string.charAt(3) === string.charAt(4)){
-				amount = amount + 1;
-				document.write(amount);
-			}
-			
-			else if (string.charAt(3) === string.charAt(4) && string.charAt(4) === string.charAt(5)){
-				amount = amount + 1;
-				document.write(amount);
-			}*/
-			
-			for (var i = 0; i < string.length; i++) {
-				if (string.substr(i,1) === string.substr(i+1,1) && string.substr(i+1,1) === string.substr(i+2,1)) {
+		myFunction();
+		function myFunction() {
+		
+		var amount = 0; 
+		intext = document.getElementById("intext").value;
+		document.write(intext + "<br>");
+		var strLength = intext.length;
+		
+		
+			for (var i = 0; i < strLength-2; i++) {
+				if ((intext.substr(i,1) === intext.substr(i+1,1)) && (intext.substr(i+1,1) === intext.substr(i+2,1))) {
 					amount++;
-					document.write(amount);
 				}				
 			}
+			document.write(amount);
 		}
 	</script>
+	
+	<input type="text" id = "intext" onchange="myFunction()">
+	
 </body>
 </html>
