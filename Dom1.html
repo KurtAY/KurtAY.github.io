@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>DOM 1</title>
+	<style>
+		h4 {
+			font-family: calibri;
+		}
+	</style>
 </head>
 
 <body>
+	<h4>DOM 1</h4>
 <div id="div1">
-	<p id="p1">Greatest properly off ham exercise all. Unsatiable invitation its possession nor off. 
+	<p id="text">Greatest properly off ham exercise all. Unsatiable invitation its possession nor off. 
 		All difficulty estimating unreserved increasing the solicitude. Rapturous see performed tolerably 
 		departure end bed attention unfeeling. On unpleasing principles alteration of. Be at performed preferred 
 		determine collected. Him nay acuteness discourse listening estimable our law. Decisively it occasional 
@@ -19,9 +25,9 @@
 		//paragraphTag();
 		function paragraphTag() {
 			var para = document.createElement("p");
-			var node = document.createTextNode("New Paragraph.")
-			para.appendChild(node);
-			document.getElementById("div1");
+			var text = document.createTextNode("New Paragraph Tag.")
+			para.appendChild(text);
+			var element = document.getElementById("text");
 			element.appendChild(para);
 		}
 	</script>
@@ -34,10 +40,13 @@
 		}
 	</script>
 
+<button onclick="deleteParagraphTag()">Click to delete the paragraph tag.</button>
 	<script>
 		//deleteParagraphTag();
 		function deleteParagraphTag() {
-
+			var parent = document.getElementById("div1");
+			var child = document.getElementById("text");
+			parent.removeChild(child);
 		}
 	</script>
 </body>
