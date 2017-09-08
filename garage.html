@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Garage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h2 a onclick="location.href = 'index.html'">Garage... back to index</h2>
+
+    <hr />
+    <input type="text" id= "carInputBox" value="Make">
+    <input type="text" id= "carColorBox" value="Color">
+    <br>
+    Hand Car Wash:
+    Yes<input type="radio" name="carWash" id="carWashYes" value="yes"/>
+    No<input type="radio" name="carWash" id="carWashNo" value="no"/><br/>
+    
+    <br>
+
+    <button onclick="addCar(carInputBox.value, carColorBox.value)" type="button" id="addCarBtn">Click to add car.</button>
+    <button onclick="removeCar()" type="button" id="rmvCarBtn">Click to remove car</button>
+    <button onclick="displayCars()">Click to display Cars</button>
+    
+    <p id="carListDisp"></p>
+
+    <script src="garageMain.js"></script>
+
+</body>
+</html>
